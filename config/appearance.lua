@@ -17,17 +17,21 @@ return {
    cursor_blink_ease_out = 'Linear',
    default_cursor_style = 'BlinkingBlock',
    cursor_blink_rate = 300,
+   cursor_thickness = "1pt",
 
    -- color scheme
    -- colors = colors,
 
-   color_scheme = 'rose-pine',
+   color_scheme = 'Dracula+',
 
    -- background
    -- background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
 
    -- scrollbar
    enable_scroll_bar = true,
+   initial_rows = 25,
+   initial_cols = 90,
+   window_background_opacity = 0.95,
 
    -- tab bar
    enable_tab_bar = true,
@@ -39,8 +43,8 @@ return {
 
    -- window
    window_padding = {
-      left = 0,
-      right = 0,
+      left = 10,
+      right = 10,
       top = 10,
       bottom = 7.5,
    },
