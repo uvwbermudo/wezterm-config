@@ -1,5 +1,5 @@
 local gpu_adapters = require('utils.gpu-adapter')
-local backdrops = require('utils.backdrops')
+-- local backdrops = require('utils.backdrops')
 local colors = require('colors.custom')
 
 return {
@@ -13,16 +13,18 @@ return {
 
    -- cursor
    animation_fps = 120,
-   cursor_blink_ease_in = 'EaseOut',
-   cursor_blink_ease_out = 'EaseOut',
+   cursor_blink_ease_in = 'Linear',
+   cursor_blink_ease_out = 'Linear',
    default_cursor_style = 'BlinkingBlock',
-   cursor_blink_rate = 650,
+   cursor_blink_rate = 300,
 
    -- color scheme
-   colors = colors,
+   -- colors = colors,
+
+   color_scheme = 'rose-pine',
 
    -- background
-   background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
+   -- background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
 
    -- scrollbar
    enable_scroll_bar = true,
