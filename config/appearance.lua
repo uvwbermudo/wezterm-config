@@ -17,12 +17,12 @@ return {
    cursor_blink_ease_out = 'Linear',
    default_cursor_style = 'BlinkingBlock',
    cursor_blink_rate = 300,
-   cursor_thickness = "1pt",
+   cursor_thickness = '1pt',
 
    -- color scheme
    -- colors = colors,
 
-   color_scheme = 'rose-pine',
+   color_scheme = 'Dracula+',
 
    -- background
    -- background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
@@ -59,7 +59,7 @@ return {
    --    saturation = 0.9,
    --    brightness = 0.65,
    -- },
-   window_decorations= "RESIZE",
+   window_decorations = 'RESIZE',
    inactive_pane_hsb = {
       saturation = 1,
       brightness = 1,
