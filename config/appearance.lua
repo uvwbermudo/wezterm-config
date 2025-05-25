@@ -72,4 +72,6 @@ return {
       fade_out_duration_ms = 250,
       target = 'CursorColor',
    },
+
+   audible_bell = 'Disabled',
 }
