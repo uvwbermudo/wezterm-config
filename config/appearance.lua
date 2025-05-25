@@ -22,7 +22,7 @@ return {
    -- color scheme
    -- colors = colors,
 
-   color_scheme = 'Dracula+',
+   color_scheme = 'rose-pine',
 
    -- background
    -- background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
@@ -59,6 +59,7 @@ return {
    --    saturation = 0.9,
    --    brightness = 0.65,
    -- },
+   window_decorations= "RESIZE",
    inactive_pane_hsb = {
       saturation = 1,
       brightness = 1,
