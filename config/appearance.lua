@@ -13,7 +13,7 @@ return {
    -- color scheme
    -- colors = colors,
 
-   color_scheme = 'Dracula+',
+   color_scheme = 'Black Metal (base16)',
 
    -- scrollbar
    enable_scroll_bar = true,
