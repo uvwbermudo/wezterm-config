@@ -22,7 +22,7 @@ local nf = wezterm.nerdfonts
 local attr = Cells.attr
 
 local M = {}
-
+calendar
 local ICON_SEPARATOR = nf.oct_dash
 local ICON_DATE = nf.fa_calendar
 

@@ -1,13 +1,16 @@
 local Config = require('config')
+local wezterm = require 'wezterm'
+local mux = wezterm.mux
 
--- require('utils.backdrops')
---    -- :set_focus('#000000')
---    -- :set_images_dir(require('wezterm').home_dir .. '/Pictures/Wallpapers/')
---    :set_images()
---    :random()
+wezterm.on('gui-startup', function(cmd)
+  local tab, pane, window = mux.spawn_window(cmd or {})
+  local gui_window = window:gui_window();
+  gui_window:maximize()
+  gui_window:perform_action(wezterm.action.ToggleFullScreen, pane)
+end)
 
 require('events.left-status').setup()
-require('events.right-status').setup({ date_format = '%a %H:%M:%S' })
+-- require('events.right-status').setup({ date_format = '%a %H:%M:%S' })
 require('events.tab-title').setup({ hide_active_tab_unseen = false, unseen_icon = 'circle' })
 require('events.new-tab-button').setup()
 

@@ -1,18 +1,9 @@
-local gpu_adapters = require('utils.gpu-adapter')
--- local backdrops = require('utils.backdrops')
 local colors = require('colors.custom')
 
 return {
-   max_fps = 120,
-   front_end = 'WebGpu',
-   webgpu_power_preference = 'HighPerformance',
-   webgpu_preferred_adapter = gpu_adapters:pick_best(),
-   -- webgpu_preferred_adapter = gpu_adapters:pick_manual('Dx12', 'IntegratedGpu'),
-   -- webgpu_preferred_adapter = gpu_adapters:pick_manual('Gl', 'Other'),
    underline_thickness = '1.5pt',
 
    -- cursor
-   animation_fps = 120,
    cursor_blink_ease_in = 'Linear',
    cursor_blink_ease_out = 'Linear',
    default_cursor_style = 'BlinkingBlock',
@@ -24,13 +15,10 @@ return {
 
    color_scheme = 'Dracula+',
 
-   -- background
-   -- background = backdrops:initial_options(false), -- set to true if you want wezterm to start on focus mode
-
    -- scrollbar
    enable_scroll_bar = true,
-   initial_rows = 25,
-   initial_cols = 90,
+   -- initial_rows = 25,
+   -- initial_cols = 90,
    window_background_opacity = 0.95,
 
    -- tab bar
